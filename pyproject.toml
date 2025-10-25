@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 requires = ["setuptools>=80", "wheel"]
 
 [project]
-authors = [{name = "Denise Case"}] # TODO: Change to YOUR name (ownership matters)
+authors = [{name = "Airfirm"}]
 classifiers = [
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.12",
@@ -32,10 +32,10 @@ dependencies = [ # fmt: off
 ]  # fmt: on
 
 [project.urls]
-"Bug Tracker" = "https://github.com/denisecase/pro-analytics-02-starter/issues"
-Documentation = "https://denisecase.github.io/pro-analytics-02-starter/"
-Homepage = "https://github.com/denisecase/pro-analytics-02-starter"
-Repository = "https://github.com/denisecase/pro-analytics-02-starter"
+"Bug Tracker" = "https://github.com/Airfirm/smart-store-femi/issues"
+Documentation = "https://github.com/Airfirm/smart-store-femi"
+Homepage = "https://github.com/Airfirm/smart-store-femi"
+Repository = "https://github.com/Airfirm/smart-store-femi"
 
 [project.optional-dependencies]
 dev = [

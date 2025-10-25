@@ -1,8 +1,8 @@
-# Pro Analytics 02 Python Starter Repository
+# Business Intelligence Analytics Project - smart-store-femi Documentation
 
 > Use this repo to start a professional Python project.
 
-- Additional information: <https://github.com/denisecase/pro-analytics-02>
+- Additional information: <https://github.com/Airfirm/smart-store-femi>
 - Project organization: [STRUCTURE](./STRUCTURE.md)
 - Build professional skills:
   - **Environment Management**: Every project in isolation
