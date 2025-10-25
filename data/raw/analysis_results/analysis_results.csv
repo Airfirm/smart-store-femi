@@ -1,0 +1,2 @@
+Common Customer Location,Highest Product Price,Lowest Product Price,Average Sales Amount,Minimum Sales Amount,Maximum Sales Amount,Data Issues Found
+Location column not found,976.44,13.51,1014.2692550000002,0.0,6619.2,customers_data: 1 duplicate rows; sales_data: 1 missing values; sales_data: 1 duplicate rows; sales_data.SaleAmount: 1 values coerced to NaN during numeric cleaning
