@@ -18,7 +18,9 @@ def first_existing_column(df, candidates):
 
 
 # ---------- Paths ----------
-BASE_PATH = os.path.dirname(os.path.dirname(__file__))  # .../smart-femi-store
+# Script is now in: src/analytics_project/
+# Project root is 2 levels up from this file
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))  # .../smart-femi-store
 RAW_DATA_PATH = os.path.join(BASE_PATH, "data", "raw")
 RESULTS_PATH = os.path.join(RAW_DATA_PATH, "analysis_results")
 
