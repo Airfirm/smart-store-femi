@@ -1,5 +1,155 @@
 # Business Intelligence Analytics Project - smart-store-femi Documentation
 
+### 👩🏽‍💻 Author
+
+**Oluwafemi Salawu**
+*Data & Business Intelligence Analyst*
+📧 [ogsalawu@gmail.com]
+🔗 [https://github.com/Airfirm]
+
+---
+
+## 🧠 Smart Store Analytics Project
+
+### 📋 Project Overview
+
+The **Smart Store Analytics** project is designed to demonstrate how Business Intelligence (BI) and Data Analytics tools can be used to extract insights from retail data.
+Using **Python**, **pandas**, and **Power BI**, this project explores patterns in sales, customer behavior, and product pricing to support **data-driven decision-making**.
+
+The goal is to automate data analysis and produce reports that can help business leaders identify trends, optimize pricing, and forecast performance — combining ETL concepts, BI visualization, and statistical techniques.
+
+---
+
+### 🏗️ Project Structure
+
+```
+smart-store-femi/
+│
+├── data/
+│   └── raw/
+│       ├── customers_data.csv
+│       ├── products_data.csv
+│       ├── sales_data.csv
+│       └── analysis_results/
+│           └── analysis_results.csv
+│
+├── src/
+│   └── analytics_project/
+│       ├── __init__.py
+│       └── run_basic_analysis.py
+│
+├── .pre-commit-config.yaml
+├── pyproject.toml
+├── README.md
+└── requirements.txt
+```
+
+---
+
+### ⚙️ Features
+
+* **Automated Data Cleaning:**
+  Cleans messy or non-numeric data (e.g., “$1,234.50”) for reliable analysis.
+* **Descriptive Analytics:**
+
+  * Finds most common customer locations.
+  * Identifies highest and lowest product prices.
+  * Calculates average, minimum, and maximum sales.
+* **Data Quality Checks:**
+  Detects missing, duplicate, and non-numeric values.
+* **Automated Output:**
+  Saves all key insights in `data/raw/analysis_results/analysis_results.csv`.
+* **Pre-commit Integration:**
+  Uses **Ruff** and **pre-commit hooks** for linting, formatting, and style consistency.
+
+---
+
+### 🧮 Example Insights
+
+| Metric                        | Example Output                       |
+| ----------------------------- | ------------------------------------ |
+| Most Common Customer Location | Dallas, TX                           |
+| Highest Product Price         | $1,299.99                            |
+| Lowest Product Price          | $3.49                                |
+| Average Sales Amount          | $782.56                              |
+| Data Issues Found             | 5 missing values in `sales_data.csv` |
+
+---
+
+### 🚀 How to Run the Project
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/<your-username>/smart-store-femi.git
+   cd smart-store-femi
+   ```
+
+2. **Activate your virtual environment:**
+
+   ```bash
+   uv venv .venv
+   .venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+
+4. **Run the analysis:**
+
+   ```bash
+   uv run python -m src.analytics_project.run_basic_analysis
+   ```
+
+5. **View output:**
+
+   * Results are saved in:
+
+     ```
+     data/raw/analysis_results/analysis_results.csv
+     ```
+
+---
+
+### 🧰 Tools & Technologies
+
+* **Python 3.11+**
+* **pandas** for data analysis
+* **Ruff** for linting and formatting
+* **Pre-commit** hooks for code quality enforcement
+* **GitHub** for version control
+* **Power BI / Tableau** (optional for visual exploration)
+* **VS Code** as primary development environment
+
+---
+
+### 📊 Business Intelligence Relevance
+
+This project aligns with **BI principles** by:
+
+* Applying **data-driven decision-making (DDDM)**.
+* Using **cross-platform tools** like Python and Git for collaboration.
+* Automating **ETL-like data preparation and exploration**.
+* Supporting **scalable analytics workflows** (Apache Spark integration possible).
+
+---
+
+### ✅ Next Steps
+
+* Add visualization layer (Power BI or Python’s `plotly`/`matplotlib`).
+* Integrate SQL or Snowflake for larger datasets.
+* Extend model for forecasting sales trends (using regression or time series).
+
+---
+
+
+
+
+
+
 > Use this repo to start a professional Python project.
 
 - Additional information: <https://github.com/Airfirm/smart-store-femi>
