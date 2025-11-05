@@ -7,13 +7,13 @@ ProductID,ProductName,Category,UnitPrice,SatisfactionScore,SupplierName
 2005,Office-Huge,Home,428.78,10,PrimeSource Ltd.
 2006,Office-Class,Clothing,198,3,UrbanStyle Traders
 2007,Clothing-Over,Electronics,583.39,7,UrbanStyle Traders
-2008,Electronics-Skin,Home,66.59,8,GlobalTech Supplies
-2009,Office-Raise,Clothing,66.31,5,UrbanStyle Traders
-2010,Electronics-Themselves,Clothing,77.84,4,EcoHome Goods
+2008,Electronics-Skin,Home,66.59,8,
+2009,Office-Raise,Clothing,66.31,5,
+2010,Electronics-Themselves,Clothing,77.84,4,
 2011,Electronics-Religious,Clothing,409.74,8,UrbanStyle Traders
-2012,Clothing-Artist,Electronics,623.19,8,GlobalTech Supplies
-2013,Office-Cultural,Home,935.36,3,EcoHome Goods
-2014,Clothing-Eat,Home,246.3,6,FreshMart Co.
+2012,Clothing-Artist,Electronics,623.19,18,GlobalTech Supplies
+2013,Office-Cultural,Home,935.36,13,EcoHome Goods
+2014,Clothing-Eat,Home,246.3,16,FreshMart Co.
 2015,Office-Itself,Clothing,674.97,5,UrbanStyle Traders
 2016,Home-He,Office,323.02,2,GlobalTech Supplies
 2017,Electronics-Feeling,Electronics,463.7,8,FreshMart Co.
@@ -99,3 +99,8 @@ ProductID,ProductName,Category,UnitPrice,SatisfactionScore,SupplierName
 2097,Office-Recent,Clothing,842.1,7,PrimeSource Ltd.
 2098,Clothing-Trouble,Electronics,907.86,9,FreshMart Co.
 2099,Electronics-Several,Electronics,646.32,8,UrbanStyle Traders
+2002,Office-Family,Clothing,866,8,GlobalTech Supplies
+2003,Electronics-Training,Clothing,385.18,5,EcoHome Goods
+2004,Office-Where,Home,927.25,7,UrbanStyle Traders
+2005,Office-Huge,Home,428.78,10,PrimeSource Ltd.
+2006,Office-Class,Clothing,198,3,UrbanStyle Traders

@@ -7,13 +7,13 @@ CustomerID,Name,Region,JoinDate,PerformanceScore,PreferredContactMethod
 1005,Jessica Mora,South,8/5/2021,98,Chat
 1006,Hannah Ray,West,7/3/2021,78,SMS
 1007,David Kim,West,5/20/2020,82,In-Person
-1008,William Ramirez,EAST,9/15/2023,70,In-Person
-1009,Zachary Bell Jr.,East,4/20/2023,70,SMS
-1010,Mike Davis,East,3/23/2022,83,In-Person
+1008,William Ramirez,EAST,9/15/2023,70,
+1009,Zachary Bell Jr.,East,4/20/2023,70,
+1010,Mike Davis,East,3/23/2022,83,
 1011,Amanda Myers,West,9/5/2021,95,SMS
-1012,Tara Miller,North,8/10/2020,99,Phone
-1013,Alyssa Morgan,North,7/22/2022,83,SMS
-1014,Cindy Woods,East,4/2/2024,62,SMS
+1012,Tara Miller,North,8/10/2020,199,Phone
+1013,Alyssa Morgan,North,7/22/2022,183,SMS
+1014,Cindy Woods,East,4/2/2024,162,SMS
 1015,Jennifer Rodgers,North,2/12/2023,81,In-Person
 1016,Andrea Roberts,EAST,5/16/2021,61,In-Person
 1017,Brittney Burnett,North,7/3/2020,83,Email
@@ -200,3 +200,8 @@ CustomerID,Name,Region,JoinDate,PerformanceScore,PreferredContactMethod
 1198,Chris Allen,south-west,10/11/2022,92,Phone
 1199,James Cooley,West,7/23/2020,68,SMS
 1005,Jessica Mora,South,8/5/2021,65,Chat
+1002,Mark Marshall,Central,8/8/2020,74,Email
+1003,David Brennan,North,5/21/2020,67,In-Person
+1004,Kerry Collins,North,9/12/2023,80,SMS
+1005,Jessica Mora,South,8/5/2021,98,Chat
+1006,Hannah Ray,West,7/3/2021,78,SMS
