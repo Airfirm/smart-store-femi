@@ -186,3 +186,56 @@
 2025-11-06 21:20:49.259 | INFO     | __main__:main:143 - ==================================
 2025-11-06 21:20:49.259 | INFO     | __main__:main:144 - FINISHED prepare_sales_data.py
 2025-11-06 21:20:49.259 | INFO     | __main__:main:145 - ==================================
+2025-11-06 22:30:06.207 | INFO     | __main__:main:117 - ==================================
+2025-11-06 22:30:06.208 | INFO     | __main__:main:118 - STARTING prepare_customers_data.py
+2025-11-06 22:30:06.208 | INFO     | __main__:main:119 - ==================================
+2025-11-06 22:30:06.209 | INFO     | __main__:main:121 - Root         : C:\Repos\smart-store-femi
+2025-11-06 22:30:06.209 | INFO     | __main__:main:122 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 22:30:06.209 | INFO     | __main__:main:123 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 22:30:06.209 | INFO     | __main__:read_raw_data:53 - READING: C:\Repos\smart-store-femi\data\raw\customers_data.csv
+2025-11-06 22:30:06.213 | INFO     | __main__:remove_duplicates:74 - Removing duplicates from DataFrame with shape (209, 6)
+2025-11-06 22:39:16.584 | INFO     | __main__:main:82 - ==================================
+2025-11-06 22:39:16.600 | INFO     | __main__:main:83 - STARTING prepare_customers_data.py
+2025-11-06 22:39:16.600 | INFO     | __main__:main:84 - ==================================
+2025-11-06 22:39:16.600 | INFO     | __main__:main:86 - Root         : C:\Repos\smart-store-femi
+2025-11-06 22:39:16.600 | INFO     | __main__:main:87 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 22:39:16.600 | INFO     | __main__:main:88 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 22:39:16.600 | INFO     | __main__:read_raw_data:56 - READING: C:\Repos\smart-store-femi\data\raw\customers_data.csv
+2025-11-06 22:39:16.644 | INFO     | __main__:save_prepared_data:73 - ✅ Cleaned data saved to C:\Repos\smart-store-femi\data\prepared\customers_prepared.csv
+2025-11-06 22:39:16.644 | INFO     | __main__:main:129 - ==================================
+2025-11-06 22:39:16.645 | INFO     | __main__:main:130 - ✅ Finished cleaning. Final shape: (201, 6)
+2025-11-06 22:39:16.645 | INFO     | __main__:main:131 - ==================================
+2025-11-06 22:39:16.645 | INFO     | __main__:main:132 - FINISHED prepare_customers_data.py
+2025-11-06 22:39:16.645 | INFO     | __main__:main:133 - ==================================
+2025-11-06 22:48:58.119 | INFO     | __main__:main:82 - ==================================
+2025-11-06 22:48:58.119 | INFO     | __main__:main:83 - STARTING prepare_customers_data.py
+2025-11-06 22:48:58.119 | INFO     | __main__:main:84 - ==================================
+2025-11-06 22:48:58.119 | INFO     | __main__:main:86 - Root         : C:\Repos\smart-store-femi
+2025-11-06 22:48:58.119 | INFO     | __main__:main:87 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 22:48:58.119 | INFO     | __main__:main:88 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 22:48:58.119 | INFO     | __main__:read_raw_data:56 - READING: C:\Repos\smart-store-femi\data\raw\customers_data.csv
+2025-11-06 22:48:58.143 | INFO     | __main__:save_prepared_data:73 - ✅ Cleaned data saved to C:\Repos\smart-store-femi\data\prepared\customers_prepared.csv
+2025-11-06 22:48:58.143 | INFO     | __main__:main:129 - ==================================
+2025-11-06 22:48:58.143 | INFO     | __main__:main:130 - ✅ Finished cleaning. Final shape: (201, 6)
+2025-11-06 22:48:58.144 | INFO     | __main__:main:131 - ==================================
+2025-11-06 22:48:58.144 | INFO     | __main__:main:132 - FINISHED prepare_customers_data.py
+2025-11-06 22:48:58.144 | INFO     | __main__:main:133 - ==================================
+2025-11-06 22:59:07.278 | INFO     | __main__:main:117 - ==================================
+2025-11-06 22:59:07.278 | INFO     | __main__:main:118 - STARTING prepare_customers_data.py
+2025-11-06 22:59:07.278 | INFO     | __main__:main:119 - ==================================
+2025-11-06 22:59:07.278 | INFO     | __main__:main:121 - Root         : C:\Repos\smart-store-femi
+2025-11-06 22:59:07.278 | INFO     | __main__:main:122 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 22:59:07.278 | INFO     | __main__:main:123 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 22:59:07.278 | INFO     | __main__:read_raw_data:53 - READING: C:\Repos\smart-store-femi\data\raw\customers_data.csv
+2025-11-06 22:59:07.283 | INFO     | __main__:remove_duplicates:74 - Removing duplicates from DataFrame with shape (209, 6)
+2025-11-06 22:59:07.283 | INFO     | __main__:handle_missing_values:82 - Handling missing values for DataFrame shape (204, 6)
+2025-11-06 22:59:07.283 | INFO     | __main__:handle_missing_values:88 - Missing values before: 3
+2025-11-06 22:59:07.288 | INFO     | __main__:handle_missing_values:94 - Missing values after: 0
+2025-11-06 22:59:07.288 | INFO     | __main__:remove_outliers:99 - Removing outliers...
+2025-11-06 22:59:07.289 | INFO     | __main__:remove_outliers:107 - Removed 3 outliers.
+2025-11-06 22:59:07.292 | INFO     | __main__:save_prepared_data:70 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\customers_prepared.csv
+2025-11-06 22:59:07.292 | INFO     | __main__:main:143 - ==================================
+2025-11-06 22:59:07.292 | INFO     | __main__:main:144 - ✅ Finished cleaning. Final shape: (198, 6)
+2025-11-06 22:59:07.293 | INFO     | __main__:main:145 - ==================================
+2025-11-06 22:59:07.293 | INFO     | __main__:main:146 - FINISHED prepare_customers_data.py
+2025-11-06 22:59:07.293 | INFO     | __main__:main:147 - ==================================

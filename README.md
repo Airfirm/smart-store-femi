@@ -11,6 +11,53 @@
 
 ## 🧠 Smart Store Analytics Project
 
+### Data Preparation: Applied the following process for each project data files 
+---
+def save_prepared_data(df: pd.DataFrame, file_name: str) -> None:
+    """Save cleaned data to CSV."""
+    file_path = PREPARED_DATA_DIR / file_name
+    df.to_csv(file_path, index=False)
+    logger.info(f"✅ Data saved to {file_path}")
+
+
+def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
+    logger.info(f"Removing duplicates from DataFrame with shape {df.shape}")
+    if df.empty:
+        logger.warning("DataFrame is empty — skipping duplicate removal.")
+        return df
+    return DataScrubber(df).remove_duplicate_records()
+
+
+def handle_missing_values(df: pd.DataFrame) -> pd.DataFrame:
+    logger.info(f"Handling missing values for DataFrame shape {df.shape}")
+    if df.empty:
+        logger.warning("DataFrame is empty — skipping missing value handling.")
+        return df
+
+    missing_before = df.isna().sum().sum()
+    logger.info(f"Missing values before: {missing_before}")
+
+    if "PreferredContactMethod" in df.columns:
+        df.dropna(subset=["PreferredContactMethod"], inplace=True)
+
+    missing_after = df.isna().sum().sum()
+    logger.info(f"Missing values after: {missing_after}")
+    return df
+
+
+def remove_outliers(df: pd.DataFrame) -> pd.DataFrame:
+    logger.info("Removing outliers...")
+    if df.empty:
+        logger.warning("DataFrame is empty — skipping outlier removal.")
+        return df
+
+    initial_count = len(df)
+    if "PerformanceScore" in df.columns:
+        df = df[(df["PerformanceScore"] >= 60) & (df["PerformanceScore"] <= 100)]
+    logger.info(f"Removed {initial_count - len(df)} outliers.")
+    return df
+---
+
 ### 📋 Project Overview
 
 The **Smart Store Analytics** project is designed to demonstrate how Business Intelligence (BI) and Data Analytics tools can be used to extract insights from retail data.
