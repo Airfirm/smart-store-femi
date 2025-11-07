@@ -1,0 +1,188 @@
+2025-11-06 20:15:44.307 | INFO     | __main__:main:177 - ==================================
+2025-11-06 20:15:44.309 | INFO     | __main__:main:178 - STARTING prepare_customers_data.py
+2025-11-06 20:15:44.309 | INFO     | __main__:main:179 - ==================================
+2025-11-06 20:15:44.309 | INFO     | __main__:main:181 - Root         : C:\Repos\smart-store-femi\src
+2025-11-06 20:15:44.309 | INFO     | __main__:main:182 - data/raw     : C:\Repos\smart-store-femi\src\data\raw
+2025-11-06 20:15:44.309 | INFO     | __main__:main:183 - data/prepared: C:\Repos\smart-store-femi\src\data\prepared
+2025-11-06 20:15:44.309 | INFO     | __main__:main:184 - scripts      : C:\Repos\smart-store-femi\src\analytics_project
+2025-11-06 20:15:44.309 | INFO     | __main__:read_raw_data:61 - READING: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv.
+2025-11-06 20:15:44.309 | ERROR    | __main__:read_raw_data:64 - File not found: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv
+2025-11-06 20:15:44.328 | INFO     | __main__:main:196 - Initial dataframe columns: 
+2025-11-06 20:15:44.329 | INFO     | __main__:main:197 - Initial dataframe shape: (0, 0)
+2025-11-06 20:27:47.083 | INFO     | __main__:main:177 - ==================================
+2025-11-06 20:27:47.084 | INFO     | __main__:main:178 - STARTING prepare_customers_data.py
+2025-11-06 20:27:47.084 | INFO     | __main__:main:179 - ==================================
+2025-11-06 20:27:47.084 | INFO     | __main__:main:181 - Root         : C:\Repos\smart-store-femi\src
+2025-11-06 20:27:47.084 | INFO     | __main__:main:182 - data/raw     : C:\Repos\smart-store-femi\src\data\raw
+2025-11-06 20:27:47.084 | INFO     | __main__:main:183 - data/prepared: C:\Repos\smart-store-femi\src\data\prepared
+2025-11-06 20:27:47.084 | INFO     | __main__:main:184 - scripts      : C:\Repos\smart-store-femi\src\analytics_project
+2025-11-06 20:27:47.084 | INFO     | __main__:read_raw_data:61 - READING: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv.
+2025-11-06 20:27:47.084 | ERROR    | __main__:read_raw_data:64 - File not found: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv
+2025-11-06 20:27:47.084 | INFO     | __main__:main:196 - Initial dataframe columns: 
+2025-11-06 20:27:47.084 | INFO     | __main__:main:197 - Initial dataframe shape: (0, 0)
+2025-11-06 20:43:42.869 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:43:42.869 | INFO     | __main__:main:116 - STARTING prepare_customers_data.py
+2025-11-06 20:43:42.869 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:43:42.869 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi\src
+2025-11-06 20:43:42.869 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\src\data\raw
+2025-11-06 20:43:42.869 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\src\data\prepared
+2025-11-06 20:43:42.869 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv
+2025-11-06 20:43:42.869 | ERROR    | __main__:read_raw_data:58 - File not found: C:\Repos\smart-store-femi\src\data\raw\customers_data.csv
+2025-11-06 20:43:42.869 | ERROR    | __main__:main:129 - No data loaded. Exiting early.
+2025-11-06 20:47:27.617 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:47:27.617 | INFO     | __main__:main:116 - STARTING prepare_customers_data.py
+2025-11-06 20:47:27.617 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:47:27.617 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 20:47:27.617 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 20:47:27.617 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 20:47:27.617 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\customers_data.csv
+2025-11-06 20:47:27.642 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (209, 6)
+2025-11-06 20:47:27.668 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (204, 6)
+2025-11-06 20:47:27.669 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 20:47:27.670 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 20:47:27.670 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 20:47:27.673 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 20:47:27.686 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\customers_prepared.csv
+2025-11-06 20:47:27.687 | INFO     | __main__:main:141 - ==================================
+2025-11-06 20:47:27.687 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (198, 6)
+2025-11-06 20:47:27.687 | INFO     | __main__:main:143 - ==================================
+2025-11-06 20:47:27.687 | INFO     | __main__:main:144 - FINISHED prepare_customers_data.py
+2025-11-06 20:47:27.688 | INFO     | __main__:main:145 - ==================================
+2025-11-06 20:53:10.919 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:53:10.919 | INFO     | __main__:main:116 - STARTING prepare_products_data.py
+2025-11-06 20:53:10.919 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:53:10.921 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 20:53:10.921 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 20:53:10.921 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 20:53:10.921 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\products_data.csv
+2025-11-06 20:53:10.924 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (108, 6)
+2025-11-06 20:53:10.929 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (103, 6)
+2025-11-06 20:53:10.930 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 20:53:10.931 | INFO     | __main__:handle_missing_values:93 - Missing values after: 3
+2025-11-06 20:53:10.932 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 20:53:10.932 | INFO     | __main__:remove_outliers:106 - Removed 0 outliers.
+2025-11-06 20:53:10.935 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\products_prepared.csv
+2025-11-06 20:53:10.936 | INFO     | __main__:main:141 - ==================================
+2025-11-06 20:53:10.936 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (103, 6)
+2025-11-06 20:53:10.936 | INFO     | __main__:main:143 - ==================================
+2025-11-06 20:53:10.936 | INFO     | __main__:main:144 - FINISHED prepare_products_data.py
+2025-11-06 20:53:10.936 | INFO     | __main__:main:145 - ==================================
+2025-11-06 20:57:34.238 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:57:34.238 | INFO     | __main__:main:116 - STARTING prepare_products_data.py
+2025-11-06 20:57:34.238 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:57:34.238 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 20:57:34.238 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 20:57:34.238 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 20:57:34.238 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\products_data.csv
+2025-11-06 20:57:34.238 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (108, 6)
+2025-11-06 20:57:34.250 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (103, 6)
+2025-11-06 20:57:34.251 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 20:57:34.253 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 20:57:34.253 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 20:58:19.589 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:58:19.589 | INFO     | __main__:main:116 - STARTING prepare_products_data.py
+2025-11-06 20:58:19.589 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:58:19.589 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 20:58:19.589 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 20:58:19.589 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 20:58:19.589 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\products_data.csv
+2025-11-06 20:58:19.589 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (108, 6)
+2025-11-06 20:58:19.604 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (103, 6)
+2025-11-06 20:58:19.605 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 20:58:19.606 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 20:58:19.607 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 20:59:30.195 | INFO     | __main__:main:115 - ==================================
+2025-11-06 20:59:30.195 | INFO     | __main__:main:116 - STARTING prepare_products_data.py
+2025-11-06 20:59:30.195 | INFO     | __main__:main:117 - ==================================
+2025-11-06 20:59:30.195 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 20:59:30.195 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 20:59:30.195 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 20:59:30.195 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\products_data.csv
+2025-11-06 20:59:30.195 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (108, 6)
+2025-11-06 20:59:30.195 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (103, 6)
+2025-11-06 20:59:30.195 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 20:59:30.205 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 20:59:30.206 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 20:59:30.208 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 20:59:30.209 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\products_prepared.csv
+2025-11-06 20:59:30.209 | INFO     | __main__:main:141 - ==================================
+2025-11-06 20:59:30.209 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (97, 6)
+2025-11-06 20:59:30.210 | INFO     | __main__:main:143 - ==================================
+2025-11-06 20:59:30.210 | INFO     | __main__:main:144 - FINISHED prepare_products_data.py
+2025-11-06 20:59:30.210 | INFO     | __main__:main:145 - ==================================
+2025-11-06 21:10:53.758 | INFO     | __main__:main:115 - ==================================
+2025-11-06 21:10:53.759 | INFO     | __main__:main:116 - STARTING prepare_sales_data.py
+2025-11-06 21:10:53.759 | INFO     | __main__:main:117 - ==================================
+2025-11-06 21:10:53.759 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 21:10:53.759 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 21:10:53.759 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 21:10:53.759 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\sales_data.csv
+2025-11-06 21:10:53.765 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (2009, 9)
+2025-11-06 21:10:53.767 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (2004, 9)
+2025-11-06 21:10:53.768 | INFO     | __main__:handle_missing_values:87 - Missing values before: 5
+2025-11-06 21:10:53.770 | INFO     | __main__:handle_missing_values:93 - Missing values after: 1
+2025-11-06 21:10:53.771 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 21:10:53.772 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 21:10:53.780 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\sales_prepared.csv
+2025-11-06 21:10:53.780 | INFO     | __main__:main:141 - ==================================
+2025-11-06 21:10:53.780 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (1998, 9)
+2025-11-06 21:10:53.781 | INFO     | __main__:main:143 - ==================================
+2025-11-06 21:10:53.781 | INFO     | __main__:main:144 - FINISHED prepare_sales_data.py
+2025-11-06 21:10:53.781 | INFO     | __main__:main:145 - ==================================
+2025-11-06 21:16:32.724 | INFO     | __main__:main:115 - ==================================
+2025-11-06 21:16:32.724 | INFO     | __main__:main:116 - STARTING prepare_sales_data.py
+2025-11-06 21:16:32.724 | INFO     | __main__:main:117 - ==================================
+2025-11-06 21:16:32.724 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 21:16:32.724 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 21:16:32.724 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 21:16:32.724 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\sales_data.csv
+2025-11-06 21:16:32.745 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (2009, 9)
+2025-11-06 21:16:32.748 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (2004, 9)
+2025-11-06 21:16:32.749 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 21:16:32.751 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 21:16:32.751 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 21:16:32.752 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 21:16:32.753 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\sales_prepared.csv
+2025-11-06 21:16:32.753 | INFO     | __main__:main:141 - ==================================
+2025-11-06 21:16:32.753 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (1998, 9)
+2025-11-06 21:16:32.753 | INFO     | __main__:main:143 - ==================================
+2025-11-06 21:16:32.753 | INFO     | __main__:main:144 - FINISHED prepare_sales_data.py
+2025-11-06 21:16:32.753 | INFO     | __main__:main:145 - ==================================
+2025-11-06 21:19:11.059 | INFO     | __main__:main:115 - ==================================
+2025-11-06 21:19:11.059 | INFO     | __main__:main:116 - STARTING prepare_sales_data.py
+2025-11-06 21:19:11.075 | INFO     | __main__:main:117 - ==================================
+2025-11-06 21:19:11.075 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 21:19:11.075 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 21:19:11.075 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 21:19:11.075 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\sales_data.csv
+2025-11-06 21:19:11.080 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (2008, 9)
+2025-11-06 21:19:11.082 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (2004, 9)
+2025-11-06 21:19:11.083 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 21:19:11.084 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 21:19:11.084 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 21:19:11.086 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 21:19:11.092 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\sales_prepared.csv
+2025-11-06 21:19:11.093 | INFO     | __main__:main:141 - ==================================
+2025-11-06 21:19:11.093 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (1998, 9)
+2025-11-06 21:19:11.093 | INFO     | __main__:main:143 - ==================================
+2025-11-06 21:19:11.093 | INFO     | __main__:main:144 - FINISHED prepare_sales_data.py
+2025-11-06 21:19:11.093 | INFO     | __main__:main:145 - ==================================
+2025-11-06 21:20:49.243 | INFO     | __main__:main:115 - ==================================
+2025-11-06 21:20:49.243 | INFO     | __main__:main:116 - STARTING prepare_sales_data.py
+2025-11-06 21:20:49.243 | INFO     | __main__:main:117 - ==================================
+2025-11-06 21:20:49.243 | INFO     | __main__:main:119 - Root         : C:\Repos\smart-store-femi
+2025-11-06 21:20:49.243 | INFO     | __main__:main:120 - data/raw     : C:\Repos\smart-store-femi\data\raw
+2025-11-06 21:20:49.243 | INFO     | __main__:main:121 - data/prepared: C:\Repos\smart-store-femi\data\prepared
+2025-11-06 21:20:49.243 | INFO     | __main__:read_raw_data:52 - READING: C:\Repos\smart-store-femi\data\raw\sales_data.csv
+2025-11-06 21:20:49.250 | INFO     | __main__:remove_duplicates:73 - Removing duplicates from DataFrame with shape (2008, 9)
+2025-11-06 21:20:49.254 | INFO     | __main__:handle_missing_values:81 - Handling missing values for DataFrame shape (2003, 9)
+2025-11-06 21:20:49.255 | INFO     | __main__:handle_missing_values:87 - Missing values before: 3
+2025-11-06 21:20:49.256 | INFO     | __main__:handle_missing_values:93 - Missing values after: 0
+2025-11-06 21:20:49.256 | INFO     | __main__:remove_outliers:98 - Removing outliers...
+2025-11-06 21:20:49.258 | INFO     | __main__:remove_outliers:106 - Removed 3 outliers.
+2025-11-06 21:20:49.259 | INFO     | __main__:save_prepared_data:69 - ✅ Data saved to C:\Repos\smart-store-femi\data\prepared\sales_prepared.csv
+2025-11-06 21:20:49.259 | INFO     | __main__:main:141 - ==================================
+2025-11-06 21:20:49.259 | INFO     | __main__:main:142 - ✅ Finished cleaning. Final shape: (1997, 9)
+2025-11-06 21:20:49.259 | INFO     | __main__:main:143 - ==================================
+2025-11-06 21:20:49.259 | INFO     | __main__:main:144 - FINISHED prepare_sales_data.py
+2025-11-06 21:20:49.259 | INFO     | __main__:main:145 - ==================================
