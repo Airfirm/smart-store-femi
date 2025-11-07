@@ -7,9 +7,9 @@ CustomerID,Name,Region,JoinDate,PerformanceScore,PreferredContactMethod
 1005,Jessica Mora,South,8/5/2021,98,Chat
 1006,Hannah Ray,West,7/3/2021,78,SMS
 1007,David Kim,West,5/20/2020,82,In-Person
-1008,William Ramirez,EAST,9/15/2023,70,
-1009,Zachary Bell Jr.,East,4/20/2023,70,
-1010,Mike Davis,East,3/23/2022,83,
+1008,William Ramirez,EAST,9/15/2023,70,In-Person
+1009,Zachary Bell Jr.,East,4/20/2023,70,SMS
+1010,Mike Davis,East,3/23/2022,83,In-Person
 1011,Amanda Myers,West,9/5/2021,95,SMS
 1012,Tara Miller,North,8/10/2020,199,Phone
 1013,Alyssa Morgan,North,7/22/2022,183,SMS
@@ -205,3 +205,6 @@ CustomerID,Name,Region,JoinDate,PerformanceScore,PreferredContactMethod
 1004,Kerry Collins,North,9/12/2023,80,SMS
 1005,Jessica Mora,South,8/5/2021,98,Chat
 1006,Hannah Ray,West,7/3/2021,78,SMS
+1200,William Ramirez,EAST,9/15/2023,70,
+1201,Zachary Bell Jr.,East,4/20/2023,70,
+1202,Mike Davis,East,3/23/2022,83,

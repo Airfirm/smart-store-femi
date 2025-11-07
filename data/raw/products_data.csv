@@ -7,9 +7,9 @@ ProductID,ProductName,Category,UnitPrice,SatisfactionScore,SupplierName
 2005,Office-Huge,Home,428.78,10,PrimeSource Ltd.
 2006,Office-Class,Clothing,198,3,UrbanStyle Traders
 2007,Clothing-Over,Electronics,583.39,7,UrbanStyle Traders
-2008,Electronics-Skin,Home,66.59,8,
-2009,Office-Raise,Clothing,66.31,5,
-2010,Electronics-Themselves,Clothing,77.84,4,
+2008,Electronics-Skin,Home,66.59,8,GlobalTech Supplies
+2009,Office-Raise,Clothing,66.31,5,UrbanStyle Traders
+2010,Electronics-Themselves,Clothing,77.84,4,EcoHome Goods
 2011,Electronics-Religious,Clothing,409.74,8,UrbanStyle Traders
 2012,Clothing-Artist,Electronics,623.19,18,GlobalTech Supplies
 2013,Office-Cultural,Home,935.36,13,EcoHome Goods
@@ -104,3 +104,6 @@ ProductID,ProductName,Category,UnitPrice,SatisfactionScore,SupplierName
 2004,Office-Where,Home,927.25,7,UrbanStyle Traders
 2005,Office-Huge,Home,428.78,10,PrimeSource Ltd.
 2006,Office-Class,Clothing,198,3,UrbanStyle Traders
+3008,Electronics-Skin,Home,66.59,8,
+3009,Office-Raise,Clothing,66.31,5,
+3010,Electronics-Themselves,Clothing,77.84,4,
