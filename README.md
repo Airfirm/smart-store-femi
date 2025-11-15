@@ -12,6 +12,12 @@
 ## 🧠 Smart Store Analytics Project
 
 ### Data Preparation: Applied the following process for each project data files 
+
+
+# Screenshots:
+
+![alt text](<Screenshot 2025-11-14 225056.png>) ![alt text](<Screenshot 2025-11-14 225119.png>) ![alt text](<Screenshot 2025-11-14 225146.png>)
+
 ---
 def save_prepared_data(df: pd.DataFrame, file_name: str) -> None:
     """Save cleaned data to CSV."""
