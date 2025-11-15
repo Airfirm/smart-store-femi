@@ -100,6 +100,7 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
         CREATE TABLE IF NOT EXISTS sale (
             transaction_id INTEGER PRIMARY KEY,
             sale_date TEXT,
+            date_key TEXT,
             customer_id INTEGER,
             product_id INTEGER,
             store_id INTEGER,
@@ -109,6 +110,7 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             payment_type TEXT,
             FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
             FOREIGN KEY (product_id) REFERENCES product (product_id)
+            FOREIGN KEY (date_key) REFERENCES date (date_key)
         )
     """)
 
