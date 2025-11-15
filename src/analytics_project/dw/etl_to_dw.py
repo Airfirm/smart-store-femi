@@ -112,12 +112,25 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
         )
     """)
 
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS date (
+            date_key TEXT PRIMARY KEY,
+            year INTEGER,
+            quarter TEXT,
+            month INTEGER,
+            month_name TEXT,
+            day INTEGER,
+            weekday_name TEXT
+        )
+    """)
+
 
 def delete_existing_records(cursor: sqlite3.Cursor) -> None:
-    """Delete all existing records from the customer, product, and sale tables."""
+    """Delete all existing records from the date, customer, product, and sale tables."""
     cursor.execute("DELETE FROM customer")
     cursor.execute("DELETE FROM product")
     cursor.execute("DELETE FROM sale")
+    cursor.execute("DELETE FROM date")
 
 
 def insert_customers(customers_df: pd.DataFrame, cursor: sqlite3.Cursor) -> None:
@@ -136,6 +149,12 @@ def insert_sales(sales_df: pd.DataFrame, cursor: sqlite3.Cursor) -> None:
     """Insert sales data into the sales table."""
     logger.info(f"Inserting {len(sales_df)} sale rows.")
     sales_df.to_sql("sale", cursor.connection, if_exists="replace", index=False)
+
+
+def insert_date(date_df: pd.DataFrame, cursor: sqlite3.Cursor) -> None:
+    """Insert date data into the sales table."""
+    logger.info(f"Inserting {len(date_df)} date rows.")
+    date_df.to_sql("date", cursor.connection, if_exists="replace", index=False)
 
 
 def load_data_to_db() -> None:
@@ -167,6 +186,7 @@ def load_data_to_db() -> None:
         customers_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("customers_prepared.csv"))
         products_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("products_prepared.csv"))
         sales_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("sales_prepared.csv"))
+        date_df = pd.read_csv(CLEAN_DATA_DIR.joinpath("dim_date.csv"))
 
         # Clean column name : Database column name
         customers_df = customers_df.rename(
@@ -217,6 +237,8 @@ def load_data_to_db() -> None:
         insert_products(products_df, cursor)
 
         insert_sales(sales_df, cursor)
+
+        insert_date(date_df, cursor)
 
         conn.commit()
         logger.info("ETL finished successfully. Data loaded into the warehouse.")
