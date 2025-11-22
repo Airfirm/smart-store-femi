@@ -7,6 +7,131 @@
 📧 [ogsalawu@gmail.com]
 🔗 [https://github.com/Airfirm]
 
+
+# Smart Sales BI – OLAP & Dashboard Project
+
+## Overview
+
+The **Smart Sales BI Project** is a business intelligence solution designed to analyze
+sales performance across products, regions, and customer segments. The solution
+uses a star-schema data warehouse and Power BI to support interactive OLAP-style
+analysis (slicing, dicing, and drill-down).
+
+The goal is to help decision-makers identify which product categories, regions,
+and customer groups drive revenue growth – and where improvement opportunities exist.
+
+---
+
+## Business Goal
+
+**Primary Goal:**  
+Identify the top-performing product categories and regions by monthly sales and
+understand how customer performance, shipping mode, and satisfaction contribute
+to revenue trends.
+
+This supports better decisions in inventory planning, regional marketing,
+and customer relationship management.
+
+---
+
+## Data Model
+
+The model follows a **star schema**:
+
+- **Fact Table**
+  - `sale`
+    - TransactionID (primary key), CustomerID, ProductID
+    - SaleDate, OrderDate, ShipDate
+    - SaleAmount
+    - ShipMode, CustomerSatisfactionScore, PaymentType
+
+- **Dimension Tables**
+  - `customer`
+    - CustomerID (primary key), Name, Region, State, City
+    - JoinDate, PurchaDate, PerformanceScore
+    - PreferredContactMethod
+  - `product`
+    - ProductID (primary key), ProductName, Category, SubCategory
+    - UnitPrice, SatisfactionScore, SupplierName
+  - `Date`
+    - Date (key), Year, Quarter, Month, Year-Month, DayOfWeek
+
+Relationships:
+- `Date[Date]` → `sale[SaleDate]`
+- `customer[CustomerID]` → `sale[CustomerID]`
+- `product[ProductID]` → `sale[ProductID]`
+
+---
+
+## Key Measures (DAX)
+
+Examples of core measures:
+
+- `Total Sales = SUM(sale[SaleAmount])`
+- `Total Quantity = SUM(sale[Quantity])`
+- `Total Transactions = COUNTROWS(sale)`
+- `Distinct Customers = DISTINCTCOUNT(sale[CustomerID])`
+- `Avg Sales per Transaction = DIVIDE([Total Sales], [Total Transactions])`
+- `Avg Selling Price = DIVIDE([Total Sales], [Total Quantity])`
+- `Avg Customer Satisfaction = AVERAGE(sale[CustomerSatisfactionScore])`
+
+Time intelligence:
+
+- `Total Sales YTD`
+- `MoM Sales Change`, `MoM Sales Change %`
+- `YoY Sales Change`, `YoY Sales Change %`
+- `Running Total Sales`
+
+Ranking:
+
+- `Category Rank by Sales`
+- `Region Rank by Sales`
+
+---
+
+## Dashboards & Visuals
+
+The Power BI report includes:
+
+1. **Overview Dashboard**
+   - KPI cards: Total Sales, Total Quantity, Distinct Customers, Avg Satisfaction
+   - Line chart: Total Sales by Month (with Year/Region filters)
+   - Bar chart: Sales by Product Category
+   - Map or filled map: Sales by Region/State
+   - Slicers: Year, Region, Category, Ship Mode
+
+2. **Category & Product Performance**
+   - Bar / column charts: Sales by Category and SubCategory
+   - Table / matrix: Category × Region with Total Sales
+   - Drill-down: Category → SubCategory → Product
+
+3. **Customer & Region Insights**
+   - Stacked bar: Sales by Customer Performance Level
+   - Matrix: Region × Performance × Total Sales
+   - Scatter: Customer Satisfaction vs SalesAmount
+
+---
+
+## How to Use
+
+1. Open `SmartSalesBI.pbix` in **Power BI Desktop**.
+2. Refresh data from the data warehouse / prepared CSV files.
+3. Explore the Overview page to see high-level sales trends.
+4. Use slicers (Year, Region, Category, Performance) to slice and dice.
+5. Drill down on visuals to move from summary to detailed views.
+
+---
+
+## Future Improvements
+
+- Add margin and profit metrics.
+- Incorporate forecasting models for demand planning.
+- Integrate cloud-based data sources (e.g., Azure Synapse, BigQuery).
+
+## Images:
+![alt text](image.png)
+
+
 ---
 
 ## 🧠 Smart Store Analytics Project

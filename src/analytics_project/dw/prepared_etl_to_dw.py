@@ -55,7 +55,7 @@ CLEAN_DATA_DIR: pathlib.Path = DATA_DIR / "prepared_data"
 WAREHOUSE_DIR: pathlib.Path = DATA_DIR / "warehouse"
 
 # Warehouse database location (SQLite)
-DB_PATH: pathlib.Path = WAREHOUSE_DIR / "smart_sales.dw"
+DB_PATH: pathlib.Path = WAREHOUSE_DIR / "prepared_smart_sales.db"
 
 # Recommended - log paths and key directories for debugging
 
