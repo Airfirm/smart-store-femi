@@ -1,4 +1,5 @@
-# Business Intelligence Analytics Project - smart-store-femi Documentation
+# Smart Sales BI – OLAP & Dashboard Project
+## Business Intelligence Analytics Project - smart-store-femi Documentation
 
 ### 👩🏽‍💻 Author
 

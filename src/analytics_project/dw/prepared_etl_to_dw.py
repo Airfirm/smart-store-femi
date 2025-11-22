@@ -109,6 +109,7 @@ def create_schema(cursor: sqlite3.Cursor) -> None:
             customer_id INTEGER,
             product_id INTEGER,
             sale_amount REAL,
+            quantity INTEGER,
             ship_mode TEXT,
             customer_satisfaction_score INTEGER,
             payment_type TEXT,
@@ -213,6 +214,8 @@ def load_data_to_db() -> None:
                 "CustomerID": "customer_id",
                 "ProductID": "product_id",
                 "SaleAmount": "sale_amount",
+                "Quantity": "quantity",
+                "ShipMode": "ship_mode",
                 "CustomerSatisfactionScore": "customer_satisfaction_score",
                 "PaymentType": "payment_type",
             }
