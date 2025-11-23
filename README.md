@@ -130,8 +130,10 @@ The Power BI report includes:
 - Integrate cloud-based data sources (e.g., Azure Synapse, BigQuery).
 
 ## Images:
-![alt text](image.png)
-
+![DB Created](image.png)
+![Executive Overview](image-1.png)
+![Category and Product Performance](image-2.png)
+![Customer and Regions Insights](image-3.png)
 
 ---
 
