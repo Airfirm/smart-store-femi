@@ -131,6 +131,7 @@ The Power BI report includes:
 
 ## Images:
 ![DB Created](image.png)
+![Executive Overview](image-4.png)
 ![Executive Overview](image-1.png)
 ![Category and Product Performance](image-2.png)
 ![Customer and Regions Insights](image-3.png)
