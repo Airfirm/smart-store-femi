@@ -58,7 +58,7 @@ The model follows a **star schema**:
     - SaleDate, OrderDate, ShipDate
     - SaleAmount, Quantity
     - ShipMode, CustomerSatisfactionScore, PaymentType
-- **Transformations:**
+  - `Transformations:`
     - Data type normalization
     - Removal of invalid product IDs
     - Date table relationships 
@@ -68,7 +68,7 @@ The model follows a **star schema**:
     - CustomerID (primary key), Name, Region, State, City
     - JoinDate, PurchaDate, PerformanceScore
     - PreferredContactMethod
-- **Transformations:**
+  - `Transformations:`
     - Deduplication
     - Standardization of contact methods
     - Performance score categorization (if needed)
@@ -76,13 +76,13 @@ The model follows a **star schema**:
   - `product`
     - ProductID (primary key), ProductName, Category, SubCategory
     - UnitPrice, SatisfactionScore, SupplierName
-- **Transformations:**
+  - `Transformations:`
     - Missing product handling
     - Category/Sub-Category normalization
 
   - `Date`
     - Date (key), Year, Quarter, Month, Year-Month, DayOfWeek
-- **Transformations:**
+  - `Transformations:`
     - Generated using DAX
     - Date =
 CALENDAR (
@@ -166,12 +166,11 @@ These tools were chosen because they integrate seamlessly, support reproducible 
     - MoM / YoY growth calculations
 
 ## Results and Insights
-
-    - Certain product categories consistently dominate monthly revenue, particularly in Q2 and Q4.
-    - Regions differ significantly in purchasing behavior, with specific states driving the majority of revenue.
-    - Higher customer satisfaction correlates with higher revenue, indicating potential for loyalty programs.
-    - Shipping mode impacts customer satisfaction, with standard shipping showing modestly lower scores.
-    - Performance score segments reveal disproportionate revenue contribution from top-tier customers.
+    Certain product categories consistently dominate monthly revenue, particularly in Q2 and Q4.
+    Regions differ significantly in purchasing behavior, with specific states driving the majority of revenue.
+    Higher customer satisfaction correlates with higher revenue, indicating potential for loyalty programs.
+    Shipping mode impacts customer satisfaction, with standard shipping showing modestly lower scores.
+    Performance score segments reveal disproportionate revenue contribution from top-tier customers.
 
 - **Visualizations**
 
@@ -188,11 +187,11 @@ Each visualization was designed to support multi-dimensional OLAP analysis.
 ## Suggested Business Actions
 Based on insights from the OLAP analysis:
 
- - ✔ Inventory Optimization: Stock high-performing categories regionally to reduce shortages.
- - ✔ Regional Marketing Strategy: Increase ad spend in regions with strong upward sales trends.
- - ✔ Customer Retention Programs: Target high-performance-score customers with loyalty rewards.
- - ✔ Improve Shipping Options: Promote higher-satisfaction shipping modes.
- - ✔ Product Category Strategy: Reevaluate underperforming categories and invest more in top performers.
+ ✔ Inventory Optimization: Stock high-performing categories regionally to reduce shortages.
+ ✔ Regional Marketing Strategy: Increase ad spend in regions with strong upward sales trends.
+ ✔ Customer Retention Programs: Target high-performance-score customers with loyalty rewards.
+ ✔ Improve Shipping Options: Promote higher-satisfaction shipping modes.
+ ✔ Product Category Strategy: Reevaluate underperforming categories and invest more in top performers.
 
 ## Challenges and Resolutions
 - **Missing Product IDs**
