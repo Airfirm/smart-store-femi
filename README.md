@@ -8,6 +8,8 @@
 📧 [ogsalawu@gmail.com]
 🔗 [https://github.com/Airfirm]
 
+Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/blob/main/src/analytics_project/dw/SmartSalesBI_Dashboard.pbix
+
 
 # Smart Sales BI – OLAP & Dashboard Project
 
@@ -24,6 +26,15 @@ and customer groups drive revenue growth – and where improvement opportunities
 ---
 
 ## Business Goal
+The primary objective of this OLAP project is to analyze monthly sales performance across product categories, regions, and customer segments in order to identify the drivers of revenue growth and uncover areas requiring improvement.
+This analysis supports strategic decision-making in:
+Inventory management
+Regional marketing and promotion
+Customer engagement and retention
+Product category optimization
+
+The central question addressed is:
+Which product categories, regions, and customer profiles generate the most revenue over time, and how do operational factors (shipping mode, satisfaction, performance) influence sales patterns?
 
 **Primary Goal:**  
 Identify the top-performing product categories and regions by monthly sales and
@@ -35,8 +46,10 @@ and customer relationship management.
 
 ---
 
-## Data Model
+## Data Source
+The project uses prepared datasets sourced from kaggle, uploaded into the data/prepared_data folder, transformed using python and loaded into a SQLite star-schema data warehouse.
 
+**Data Model**
 The model follows a **star schema**:
 
 - **Fact Table**
@@ -45,17 +58,37 @@ The model follows a **star schema**:
     - SaleDate, OrderDate, ShipDate
     - SaleAmount, Quantity
     - ShipMode, CustomerSatisfactionScore, PaymentType
+- **Transformations:**
+    - Data type normalization
+    - Removal of invalid product IDs
+    - Date table relationships 
 
 - **Dimension Tables**
   - `customer`
     - CustomerID (primary key), Name, Region, State, City
     - JoinDate, PurchaDate, PerformanceScore
     - PreferredContactMethod
+- **Transformations:**
+    - Deduplication
+    - Standardization of contact methods
+    - Performance score categorization (if needed)
+
   - `product`
     - ProductID (primary key), ProductName, Category, SubCategory
     - UnitPrice, SatisfactionScore, SupplierName
+- **Transformations:**
+    - Missing product handling
+    - Category/Sub-Category normalization
+
   - `Date`
     - Date (key), Year, Quarter, Month, Year-Month, DayOfWeek
+- **Transformations:**
+    - Generated using DAX
+    - Date =
+CALENDAR (
+    MIN ( sale[SaleDate] ),
+    MAX ( sale[SaleDate] )
+)
 
 Relationships:
 - `Date[Date]` → `sale[SaleDate]`
@@ -63,6 +96,124 @@ Relationships:
 - `product[ProductID]` → `sale[ProductID]`
 
 ---
+
+## Tools Used
+- **Power BI Desktop**
+    - Interactive OLAP-style slicing, dicing, and drill-down
+    - DAX calculations for time intelligence & aggregations
+    - Visual storytelling dashboards
+
+- **SQLite Data Warehouse**
+    - Star-schema modeling foundation
+    - Clean relationships for BI consumption
+
+- **Python (Pandas, Spark)**
+    - Data preparation & cleaning
+    - Fact/dimension creation
+    - Handling missing products and data anomalies
+
+- **VS Code**
+    - Environment for SQL, Python, and BI tooling
+    - Version control using Git/GitHub
+
+These tools were chosen because they integrate seamlessly, support reproducible analytics, and model real-world BI environments.
+
+## Workflow & Logic
+- **Star-Schema Warehouse Creation**
+    - Fact table: sales transactions
+    - Dimensions: customer, product, date
+    - Ensured referential integrity (resolved missing ProductIDs)
+
+- **OLAP Design Using Power BI**
+- ***Dimensions***
+    - Time (Year, Quarter, Month)
+    - Product Category, SubCategory, Product
+    - Customer Region
+    - Shipping Mode
+    - Customer Performance Score
+
+- ***Numeric Metrics***
+    - SaleAmount
+    - Quantity
+    - Distinct Customers
+    - Customer Satisfaction
+    - Number of Transactions
+
+- **Aggregations**
+    - SUM of SaleAmount, Quantity
+    - DISTINCTCOUNT of customers
+    - AVERAGE satisfaction & performance
+    - MoM / YoY growth calculations
+
+- **Slicing**
+- ***Key Slices:***
+    - By Year-Month
+    - By Region
+    - By Category
+    - By Performance
+    - By Ship Mode
+
+- **Dicing**
+- ***Combinations used for deeper insight***
+    - Category, SubCategory, Product
+    - Region, State, City
+    - Year, Quarter, Month, Day
+
+- **Drilldown**
+    - SUM of SaleAmount, Quantity
+    - DISTINCTCOUNT of customers
+    - AVERAGE satisfaction & performance
+    - MoM / YoY growth calculations
+
+## Results and Insights
+
+    - Certain product categories consistently dominate monthly revenue, particularly in Q2 and Q4.
+    - Regions differ significantly in purchasing behavior, with specific states driving the majority of revenue.
+    - Higher customer satisfaction correlates with higher revenue, indicating potential for loyalty programs.
+    - Shipping mode impacts customer satisfaction, with standard shipping showing modestly lower scores.
+    - Performance score segments reveal disproportionate revenue contribution from top-tier customers.
+
+- **Visualizations**
+
+    - Power BI visuals included:
+    - KPI Cards (Total Sales, Quantity, Customers, Avg Satisfaction)
+    - Line Chart (Monthly Sales Trend)
+    - Column Chart (Sales by Category/SubCategory)
+    - Map (Sales by State/Region)
+    - Matrix (Category × Region OLAP view)
+    - Scatter Plot (Satisfaction vs Sales)
+    - Drilldown Hierarchy Charts
+Each visualization was designed to support multi-dimensional OLAP analysis.
+
+## Suggested Business Actions
+Based on insights from the OLAP analysis:
+
+ - ✔ Inventory Optimization: Stock high-performing categories regionally to reduce shortages.
+ - ✔ Regional Marketing Strategy: Increase ad spend in regions with strong upward sales trends.
+ - ✔ Customer Retention Programs: Target high-performance-score customers with loyalty rewards.
+ - ✔ Improve Shipping Options: Promote higher-satisfaction shipping modes.
+ - ✔ Product Category Strategy: Reevaluate underperforming categories and invest more in top performers.
+
+## Challenges and Resolutions
+- **Missing Product IDs**
+    - Issue: Thousands of sales rows referenced products not in the product table.
+    - Fix: Identified missing product IDs and removed invalid rows.
+
+- **Date Table Issue (Only Showing 2014)**
+    - Cause: Earliest/Latest SaleDate were incorrect due to data type issue.
+    - Fix: Changed SaleDate column data type to date from text and regenerated Date table.
+
+- **Blank Categories/SubCategories in Visuals**
+    - Cause: Sales fact table referenced product IDs that had no product dimension match.
+    - Fix: Removed orphaned rows and validated product dimension integrity.
+
+- **DAX Time Intelligence Not Working Initially**
+    - Cause: Date table wasn't marked as a proper date table.
+    - Fix: Set Date[Date] as "Mark as Date Table".
+
+- **Power BI Model Refresh Issues**
+    - Cause: Mixed data types and inconsistent CSV updates.
+    - Fix: Re-cleaned columns and enforced schema consistency.
 
 ## Key Measures (DAX)
 
@@ -140,6 +291,13 @@ The Power BI report includes:
 ![Executive Overview](image-1.png)
 ![Category and Product Performance](image-2.png)
 ![Customer and Regions Insights](image-3.png)
+
+
+## Final Notes
+
+This project demonstrates a complete BI lifecycle:
+Data sourcing → Data warehouse design → OLAP modeling → Power BI storytelling
+The dashboards enable real-time insights for decision makers and establish a strong foundation for future predictive analytics, automation, or cloud warehouse integration.
 
 ---
 
