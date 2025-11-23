@@ -11,6 +11,52 @@
 Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/blob/main/src/analytics_project/dw/SmartSalesBI_Dashboard.pbix
 
 
+## Module 7
+# global tech and data-related job salaries
+# Business Question
+- **How do salary levels vary across job roles, experience levels, company size, and countries in the global data & AI job market?”**
+- **This question helps identify:**
+  - Which roles pay the highest (AI Engineer, ML Engineer, Data Engineer, etc.)
+  - Whether experience level strongly affects salary
+  - Which locations compensate the most
+  - How remote work impacts pay
+  - Whether company size matters
+
+## Descriptive Dimensions & Numeric Metrics
+# Descriptive Dimensions (Categorical): These help with slicing, dicing, and drill-down.
+| Dimension          | Source Column        | Why It's Relevant                   |
+| ------------------ | -------------------- | ----------------------------------- |
+| Job Title          | `job_title`          | Compare salaries across roles       |
+| Experience Level   | `experience_level`   | Analyze junior vs senior pay        |
+| Employment Type    | `employment_type`    | Full-time vs contract differences   |
+| Employee Residence | `employee_residence` | Identify high-paying countries      |
+| Company Location   | `company_location`   | Where companies pay the most        |
+| Company Size       | `company_size`       | Startup vs large-company pay        |
+| Work Year          | `work_year`          | Salary trend over time              |
+| Remote Ratio       | `remote_ratio`       | Remote vs onsite salary differences |
+
+# Numeric Metrics: These are used for aggregations and charts.
+| Metric              | Source          | Transformation Needed                |
+| ------------------- | --------------- | ------------------------------------ |
+| Salary              | `salary_in_usd` | Convert to numeric (already numeric) |
+| Median Salary       | Calculated      | Statistical aggregation              |
+| Average Salary      | Calculated      | Statistical aggregation              |
+| Salary Count        | Calculated      | For job demand                       |
+| Salary Distribution | Calculated      | Boxplots/histograms                  |
+
+## Recommended Visualizations
+  - Bar chart — Average Salary by Job Title
+  - Boxplot — Salary distribution per Job Title
+  - Map Chart — Salary by employee residence
+  - Line Chart — Salary trend over time
+  - Stacked bar — Salary by Experience Level × Job Title
+
+  - Job Title → Experience Level → Country
+  - Remote Ratio → Salary
+  - Company Size → Salary
+
+
+## Module 6
 # Smart Sales BI – OLAP & Dashboard Project
 
 ## Overview
