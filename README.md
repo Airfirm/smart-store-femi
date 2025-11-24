@@ -56,6 +56,100 @@ Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/
   - Company Size → Salary
 
 
+# Global Tech Salaries BI – Power BI Project
+
+## 1. Business Goal
+
+The goal of this project is to understand how compensation in data/AI roles
+varies by job title, experience level, geography, and remote work patterns.
+I analyze which combinations of role, location, and work style drive the
+highest salary levels and demand, to support better hiring and pay decisions.
+- **Concretely:**
+- Identify top-paid roles by experience level and company size
+- Compare remote vs on-site/hybrid salary patterns
+- See how compensation trends change over time by work_year
+
+## 2. Data Source
+
+- Source: Kaggle dataset of data / AI job salaries.
+- Table: `salary_data_2024`
+
+Columns used:
+- Time: `work_year`
+- Role: `job_title`, `experience_level`, `employment_type`
+- Pay: `salary_in_usd`
+- Employee location: `employee_residence`
+- Company: `company_location`, `company_size`
+- Work style: `remote_ratio`
+
+## 3. Tools
+
+- Power BI Desktop for modeling, DAX, and interactive dashboards.
+- Python for performing etl; transforming and loading data to SQLite db.
+
+## 4. Workflow & Logic
+
+1. Import CSV into VS Code under the folder data/salary_analysis as `salary_data_2024`.
+2. Clean data types and remove duplicate records, created a table in SQLite db in folder data/warehouse as `salary_data_2024`.
+3. Set up Power BI DB connection and load data into Power BI
+4. Define DAX measures:
+   - `Total Salary USD`, `Average Salary USD`, `Median Salary USD`
+   - `Role Count`, `Distinct Job Titles`
+   - `YoY Salary Change`, `YoY Salary Change %` ETC
+5. Create slicers for:
+   - `work_year`, `experience_level`, `employment_type`,
+   - `company_location`, `Remote Category` (derived from `remote_ratio`)
+6. Dice by combinations such as:
+   - `job_title` vs `company_location`
+   - `experience_level` vs `company_size`
+   - `Remote Category` vs `job_title`
+7. Build visuals:
+   - Page 1: KPIs + yearly salary trend + salary by job title
+   - Page 2: salary by experience level + remote vs on-site charts
+   - Page 3: salary by location + company size + matrix drilldown
+
+## 5. Results
+
+The report highlights:
+- Which job titles and experience levels command the highest pay.
+- How salary levels differ between on-site, hybrid, and fully remote roles.
+- Which company locations and sizes show the highest overall compensation.
+- 
+- KPI cards show that total annual salary volume is `435M USD` across `Head of Machine Learning` roles and `Big Data Engineer` job titles.
+- Average salary is approximately `376,000 USD`, with a median of `22,605.50 USD`.
+- Line chart shows that total salary in 2023 is up compared to 2022 by 0.72%, and in 2024 it is up compared to 2023 by 1.63%, based on [YoY Salary Change %].
+- Bar charts reveal that Senior and Expert levels dominate total salary volume.
+- Job titles like Machine Learning Engineer and Data Scientist appear in the top 10 by average salary.
+- Stacked visual shows that On-site roles pays more than fully remote or hybrid.
+- The Remote Share - Fully Remote % measure helps see how much of your dataset is remote.
+- Location charts show which company locations have higher average salaries, and whether large companies (L) pay more than S/M.
+
+## 6. Suggested Business Actions
+
+- Adjust salary bands for high-demand roles and regions.
+- Refine remote work strategy if fully remote roles show distinct patterns.
+- Focus recruiting on regions or company profiles offering favorable pay/value.
+
+## 7. Challenges
+
+- Single-table structure (no explicit dimensions).
+- Limited time granularity (only year-level).
+- Many distinct job titles requiring Top N and grouping in visuals.
+
+## 8. Ethical Considerations
+
+- Real salary data must be handled with care and aggregated for privacy.
+- Insights should not be used to justify unfair or discriminatory pay practices.
+- Any use of this type of BI should be transparent and accountable.
+
+## Screenshots
+![salary_data_2024](image-9.png)
+![Executive Overview and Trend Analysis](image-10.png)
+![Experience and Remote Analysis](image-11.png)
+![Location and Company Size](image-12.png)
+
+
+
 ## Module 6
 # Smart Sales BI – OLAP & Dashboard Project
 
