@@ -147,9 +147,9 @@ The report highlights:
 
 ## Screenshots
 ![salary_data_2024](image-9.png)
-![Executive Overview and Trend Analysis](image-10.png)
-![Experience and Remote Analysis](image-11.png)
-![Location and Company Size](image-12.png)
+![Executive Overview and Trend Analysis](image-13.png)
+![Experience and Remote Analysis](image-14.png)
+![Location and Company Size](image-15.png)
 
 
 
