@@ -11,6 +11,7 @@
 🔗 [https://github.com/Airfirm]
 
 Interactive Power BI Report: 
+
 ▶️ https://github.com/Airfirm/smart-store-femi/blob/main/src/analytics_project/dw/SmartSalesBI_Dashboard.pbix
 ▶️ https://github.com/Airfirm/smart-store-femi/blob/main/src/analytics_project/dw/Global_Tech_Salary.pbix
 
