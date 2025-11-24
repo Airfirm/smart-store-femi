@@ -141,6 +141,7 @@ The report highlights:
 - Real salary data must be handled with care and aggregated for privacy.
 - Insights should not be used to justify unfair or discriminatory pay practices.
 - Any use of this type of BI should be transparent and accountable.
+- This is not a true depiction of this dataset, because the dataset is almost 17000 rows and I only used 5000 of those.
 
 ## Screenshots
 ![salary_data_2024](image-9.png)
