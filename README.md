@@ -1,19 +1,21 @@
 # Smart Sales BI – OLAP & Dashboard Project
 ## Business Intelligence Analytics Project - smart-store-femi Documentation
 
-### 👩🏽‍💻 Author
+## 👩🏽‍💻 Author: 
+**Oluwafemi S**
 
-**Oluwafemi Salawu**
 *Data & Business Intelligence Analyst*
+
 📧 [ogsalawu@gmail.com]
+
 🔗 [https://github.com/Airfirm]
 
 Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/blob/main/src/analytics_project/dw/SmartSalesBI_Dashboard.pbix
 
 
 ## Module 7
-# global tech and data-related job salaries
-# Business Question
+## global tech and data-related job salaries
+## Business Question
 - **How do salary levels vary across job roles, experience levels, company size, and countries in the global data & AI job market?”**
 - **This question helps identify:**
   - Which roles pay the highest (AI Engineer, ML Engineer, Data Engineer, etc.)
@@ -23,7 +25,7 @@ Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/
   - Whether company size matters
 
 ## Descriptive Dimensions & Numeric Metrics
-# Descriptive Dimensions (Categorical): These help with slicing, dicing, and drill-down.
+## Descriptive Dimensions (Categorical): These help with slicing, dicing, and drill-down.
 | Dimension          | Source Column        | Why It's Relevant                   |
 | ------------------ | -------------------- | ----------------------------------- |
 | Job Title          | `job_title`          | Compare salaries across roles       |
@@ -35,7 +37,7 @@ Interactive Power BI Report: ▶️ https://github.com/Airfirm/smart-store-femi/
 | Work Year          | `work_year`          | Salary trend over time              |
 | Remote Ratio       | `remote_ratio`       | Remote vs onsite salary differences |
 
-# Numeric Metrics: These are used for aggregations and charts.
+## Numeric Metrics: These are used for aggregations and charts.
 | Metric              | Source          | Transformation Needed                |
 | ------------------- | --------------- | ------------------------------------ |
 | Salary              | `salary_in_usd` | Convert to numeric (already numeric) |
